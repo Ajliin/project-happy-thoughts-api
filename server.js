@@ -69,7 +69,7 @@ app.post('/', async (req, res) => {
   try {
     //Success
     const newThought = await new Thought({
-      message: message,
+      message,
       //stop here, saved in node but not in mondoDB
     }).save()
     //dont know how long time save takes, hence await
